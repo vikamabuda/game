@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span class="high-score">High Score: 0</span>
+        
+      </div>
+      <div class="play-board"></div>
+      <div class="controls">
+        <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+        <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+        <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+        <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+
+        
+      </div>
+    </div>
+    <div class="ui-wrapper">
+      <h2>Difficulty Level</h2>
+      <label for="difficulty-select"></label>
+      <select id="difficulty-select" name="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+      </select>
+      <!---pause button-->
+      <button id="pauseButton">Pause</button>
+  </div>
+  <div class="start-popup" id="startPopup">
+        <div class="start-popup-content">
+            <h1>vSnake!</h1>
+            <p>-Use arrow keys to control the vSnake and collect food🎂</p>
+            <p>-use the spacebar to pause/resume the game</p>
+            <p>-Avoid hitting the walls😢 or the vSnake itself.</p>
+            <button class="start-popup-button" id="startGameButton">Start Game</button>
+        </div>
+    </div>
+
+  <!-------score button, change speed after certain score, add replay
+  pause and end game button-->
+  <script src="script.js" defer></script>
+  </body>
+</html>
